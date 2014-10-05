@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["digruby@gmail.com"]
   spec.summary       = %q{A Postgresql web interface}
   spec.description   = %q{a handy hookable Postgresql web interface}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/allenwei/Postgresql-Web"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
