@@ -1,0 +1,13 @@
+.tab-inner
+  table.table.table-striped.table-hover
+    thead    
+      tr
+        - @result.fields.each do |col|
+          td
+            = col
+    tbody
+      - @result.each do |row|
+        tr
+          - @result.fields.each do |col|
+            td
+              = row[col.to_s]

@@ -1,0 +1,28 @@
+.row
+  .col-md-4
+    .panel.panel-warning
+      .panel-heading Tables
+      .panel-body
+        #table_list.list-group
+          - @tables.each do |table|
+            a.list-group-item data-table-name="#{table}"
+              = table
+  .col-md-8
+    #main_content.panel style="display: none;"
+      ul.nav.nav-tabs.nav-justified role="tablist"
+        li.active
+          a data-toggle="tab" role="tab" href="#schema" data-url="#{root_path}columns" Schema
+        li 
+          a data-toggle="tab" role="tab" href="#data" data-url="#{root_path}data" Data
+        li 
+          a data-toggle="tab" role="tab" href="#query" Query
+      .tab-content
+        #schema.tab-pane.fade.active.in
+        #data.tab-pane.fade
+        #query.tab-pane.fade
+          #editor_error_msg
+          #editor
+          .text-right
+            button#btn_execute class="btn btn-primary" type="button" data-url="#{root_path}query" Execute
+          #query_result
+          

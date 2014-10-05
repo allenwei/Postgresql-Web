@@ -1,0 +1,20 @@
+- return if paginator.total_pages < 2
+.pagination_outer
+  ul.pagination
+    li class="#{paginator.first_page? ? 'disabled' : 'active'}"
+      a href="javascript: void(0)" data-url="#{url_with_params(url, page: paginator.page - 1)}" Prev
+    - pre_pages = (1..paginator.total_pages).to_a[0..2]
+    - pre_pages.each do |p|
+      li class="#{paginator.page == p ? 'active': ''}"
+        a href="javascript: void(0)" data-url="#{url_with_params(url, page: p)}"
+          = p
+    - if paginator.total_pages > 3
+      li
+        a.disabled href="javascript: void(0);" ...
+      - last_pages = ((paginator.total_pages - 2)..(paginator.total_pages)).to_a[-2..-1]
+      - last_pages.each do |p|
+        li class="#{paginator.page == p ? 'active': ''}"
+          a href="javascript: void(0)" data-url="#{url_with_params(url, page: p)}"
+            = p
+    li class="#{paginator.last_page? ? 'disabled' : 'active'}"
+      a href="javascript: void(0)" data-url="#{url_with_params(url, page: paginator.page + 1)}" Next

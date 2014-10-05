@@ -1,0 +1,15 @@
+.tab-inner
+  table.table.table-striped.table-hover
+    thead    
+      tr
+        - @columns.each do |col|
+          td
+            = col.column_name
+    tbody
+      - @paginator.data.each do |row|
+        tr
+          - @columns.each do |col|
+            td
+              = row[col.column_name.to_s]
+        
+== slim :_paging, locals: {paginator: @paginator, url: "#{root_path}data"}

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Postgresql Web
+    meta name="viewport" content="width=device-width,initial-scale=1.0"
+    link href="#{root_path}css/bootstrap.min.css" rel="stylesheet"
+    link href="#{root_path}css/bootflat.min.css" rel="stylesheet"
+    link href="#{root_path}css/application.css" rel="stylesheet"
+  body
+    .navbar.navbar-default
+      .container
+        .row
+          .col-md-12
+            .navbar-brand 
+              b Postgresql Web
+    .container
+      == yield
+    script src="#{root_path}js/jquery-1.11.1.min.js"
+    script src="#{root_path}js/bootstrap.min.js"
+    script src="#{root_path}js/ace/src-min-noconflict/ace.js"
+    script src="#{root_path}js/application.js"
+    

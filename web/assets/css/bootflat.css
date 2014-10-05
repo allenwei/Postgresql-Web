@@ -1,0 +1,62 @@
+/*
+Syntax error: Invalid CSS after "...          true ": expected selector or at-rule, was "!global;"
+        on line 8 of scss/bootflat/_global.scss
+        from line 6 of scss/bootflat.scss
+
+3: $modules:                     () !default;
+4: 
+5: $experimental:                true !default;
+6: 
+7: // prefix elements
+8: $prefix-webkit:               true !global;
+9: $prefix-moz:                  true !global;
+10: $prefix-spec:                 true !global;
+11: 
+12: // color elements
+13: $white:                       #FFF !default;
+
+Backtrace:
+scss/bootflat/_global.scss:8
+scss/bootflat.scss:6
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/plugin.rb:107:in `method_missing'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/exec.rb:463:in `watch_or_update'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/bin/scss:23:in `load'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/bin/scss:23:in `<main>'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/bin/ruby_executable_hooks:15:in `eval'
+/Users/allen/.rvm/gems/ruby-2.1.1@postgresql-web/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...          true \": expected selector or at-rule, was \"!global;\"\A         on line 8 of scss/bootflat/_global.scss\A         from line 6 of scss/bootflat.scss\A \A 3: $modules:                     () !default;\A 4: \A 5: $experimental:                true !default;\A 6: \A 7: // prefix elements\A 8: $prefix-webkit:               true !global;\A 9: $prefix-moz:                  true !global;\A 10: $prefix-spec:                 true !global;\A 11: \A 12: // color elements\A 13: $white:                       #FFF !default;"; }

@@ -1,0 +1,50 @@
+#table_list {
+  height: 700px;
+  overflow: auto;
+}
+
+#table_list a {
+  cursor: pointer;
+}
+
+.tab-content .tab-pane .tab-inner {
+  overflow: auto;
+  max-height: 700px;
+}
+
+.nav-tabs li {
+  background-color: #F6BB42;
+}
+.tab-content .tab-pane {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tab-content .tab-pane table thead {
+  background-color: #4FC1E9;
+  color: #fff;
+  
+}
+
+
+.pagination_outer {
+  text-align:  center;
+  width: 100%;
+}
+
+#editor {
+  height: 200px;
+  width: 100%;
+}
+
+#btn_execute {
+  margin: 20px 0;  
+}
+
+#query_result {
+  margin: 20px 0;
+}
+
+.text-right {
+  text-align: right;
+}
